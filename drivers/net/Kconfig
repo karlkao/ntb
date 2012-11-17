@@ -109,6 +109,10 @@ config EQUALIZER
 	  To compile this driver as a module, choose M here: the module
 	  will be called eql.  If unsure, say N.
 
+config NTB_NETDEV
+	tristate "Virtual Ethernet over NTB"
+	depends on NTB
+
 config TUN
 	tristate "Universal TUN/TAP device driver support"
 	select CRC32
